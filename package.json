@@ -1,0 +1,25 @@
+{
+  "name": "study_node_ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/webpack/bin/webpack.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carminest/study_node_ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carminest/study_node_ts/issues"
+  },
+  "homepage": "https://github.com/carminest/study_node_ts#readme",
+  "devDependencies": {
+    "webpack": "^5.27.0",
+    "webpack-cli": "^4.5.0"
+  }
+}
