@@ -3,7 +3,7 @@ const path = require('path');
 module.exports={
     mode: 'production', // or "development" or "none"
     entry: {
-        testing:'./src/server.js'
+        testing:'./src/test.ts'
     },
     target: 'node',
     output: {
@@ -12,6 +12,13 @@ module.exports={
       },
     resolve: {
         modules: ['node_modules'],
-        extensions: ['.js', '.json', '.jsx', '.css'],
+        extensions: ['.js', '.json', '.jsx', '.css',".tsx", ".ts"],
     },
+    module: { rules: 
+        [
+         { test: /\.ts$/,
+           use: ['ts-loader'],
+           exclude:["/node_modules"] }
+        ]
+    }
 };
